@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        input[type="checkbox"]{
+            display: none;
+        }
+        
+        p{
+            color:blue;
+        }
+        
+        input[type="checkbox"]:checked + p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <label for="tChk1"><li>Párrafo 1</li></label>
+        <label for="tChk2"><li>Párrafo 2</li></label>
+        <label for="tChk3"><li>Párrafo 3</li></label>
+        <label for="tChk4"><li>Párrafo 4</li></label>
+    </ul>
+
+    <input type="checkbox" id="tChk1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, necessitatibus.</p>
+    <input type="checkbox" id="tChk2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestiae.</p>
+    <input type="checkbox" id="tChk3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestiae.</p>
+    <input type="checkbox" id="tChk4">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestiae.</p>
+
+</body>
+</html>

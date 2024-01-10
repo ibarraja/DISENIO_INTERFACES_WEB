@@ -1,0 +1,45 @@
+:root{
+    font-size: 32px;
+}
+body{
+    background-color: grey;
+}
+table,td,th{
+    margin: 0 auto;
+    border-style: solid; /*Que la tabla tenga borde alrededor*//*Que la celda tenga borde alrededor*/
+    border-color:black;
+    border-width: 3px;
+    border-collapse: collapse; /*Que los bordes de la tabla y de las celdas coincidan*/
+}
+
+th{
+    border-style: solid;
+    border-color: black;
+    background-color: blue;
+    color: gold;
+}
+/* tbody{
+    background-color: lightcoral;
+    color:bisque;
+} */
+/* .odd{
+    background-color: lightseagreen;
+    color: azure;
+} */
+
+thead:nth-child(1){
+    font-size: 2rem;
+}
+
+/* tbody tr:nth-child(2n+2){
+    background-color: lightcoral;
+    color: bisque;
+} */
+tfoot{
+    background-color: blue;
+    color: white;
+    /* font-size: 3rem; */
+}
+/* .title-table{
+    font-size: 1.5rem;
+} */

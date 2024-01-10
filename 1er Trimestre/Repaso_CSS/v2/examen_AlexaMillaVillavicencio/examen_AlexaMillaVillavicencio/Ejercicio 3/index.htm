@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --image-height: 499px;
+            --image-width: 600px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            position: relative; 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
+
+        .imagen1 {
+            background-image: url("iconos_desarrollador_web.jpg");    
+            background-position: -370px -130px;
+            /* background-position-x: calc(); */
+        }
+
+        .imagen2 {
+            background-image: url("iconos_desarrollador_web.jpg");
+            background-position: -250px -10px;
+        }
+
+        .imagen3 {
+            background-image: url("iconos_desarrollador_web.jpg");
+            background-position: -490px -130px;
+        }
+
+        .imagen4 {
+            background-image: url("iconos_desarrollador_web.jpg");
+            background-position: -370px -250px;
+        }
+
+        .imagen{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagen imagen1"></div>
+    <div class="imagen imagen2"></div>
+    <div class="imagen imagen3"></div>
+    <div class="imagen imagen4"></div>
+</body>
+</html>

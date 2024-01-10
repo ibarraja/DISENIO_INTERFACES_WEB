@@ -1,0 +1,75 @@
+:root{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr, 1fr, 1fr, 1fr, 1fr);
+}
+
+.rojo{
+    background-color: red;
+    grid-column: span 2;
+    grid-row: span 3;
+    
+}
+.azul{
+    background-color: blue;
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.gris{
+    background-color: grey;
+    grid-column: span 2;
+    
+}
+
+.verde{
+    background-color: green;
+    grid-row: span 2;
+}
+
+.marron{
+    background-color: brown;
+    grid-row: span 2;
+}
+
+.naranja{
+    background-color: orange;
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+
+.negro {
+    background-color: black;
+}
+
+.oliva {
+    background-color: olive;
+}
+
+.cian{
+    background-color: cyan;
+    grid-column: span 4;
+    grid-row: span 3;
+}

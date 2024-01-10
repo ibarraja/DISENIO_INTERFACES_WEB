@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado publicidad"
+        "menu       principal  publicidad"
+        "menu       principal  publicidad"
+        "menu       principal  publicidad"
+        "menu       principal  publicidad"
+        "menu       principal  publicidad"
+        "pie        pie        publicidad"
+        ;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto auto 1fr auto;
+    }
+
+    header {
+        grid-area: encabezado;
+        background-color: green;
+    }
+
+    nav {
+        grid-area: menu;
+        background-color: yellow;
+    }
+    
+    nav>ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    ul>li {
+        border: 5px solid blue;
+        flex-grow: 1;
+    }
+
+    main {
+        grid-area: principal;
+        background-color: aqua;
+        overflow-y: scroll;
+    }
+
+    aside {
+        grid-area: publicidad;
+        background-color: red;
+    }
+
+    footer {
+        grid-area: pie;
+        background-color: chocolate;
+    }
+    
+    @media screen and (max-width: 450px) {
+        body {
+            grid-template-areas: 
+            "publicidad"
+            "encabezado"
+            "menu"
+            "principal"
+            "pie"
+            ;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto 1fr auto;
+        }
+        
+        ul>li {
+            display: none;
+            border: none;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        body {
+            grid-template-areas: 
+            "publicidad"
+            "encabezado"
+            "menu"
+            "principal"
+            "pie"
+            ;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto 1fr auto;
+        }
+    
+        nav>ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        Empresa
+    </header>
+    <nav>
+        <ul>
+            <li>Lorem</li>
+            <li>Nulla</li>
+            <li>Voluptas</li>
+            <li>In</li>
+            <li>Delectus</li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Officia quaerat delectus perferendis consequatur.</p>
+        <p>Dolorum excepturi est eius! Ratione.</p>
+        <p>Commodi voluptate a inventore quas.</p>
+        <p>Illum sed voluptate doloremque quam.</p>
+        <p>Voluptatem sit commodi tempora quae!</p>
+        <p>Aspernatur ad consectetur accusamus alias?</p>
+        <p>Eius officia magni nemo aliquid.</p>
+        <p>Atque ad dolores et iure.</p>
+        <p>Fuga in consectetur aliquid veniam.</p>
+        <p>Magni porro in minima dolore!</p>
+        <p>Mollitia repudiandae consequatur velit autem.</p>
+        <p>Dignissimos adipisci a quo quasi.</p>
+        <p>Aliquam quidem molestias ad dolores!</p>
+        <p>Saepe nisi suscipit voluptates sunt!</p>
+        <p>Dolores molestiae incidunt recusandae earum?</p>
+        <p>Maxime quibusdam ad hic vel?</p>
+        <p>Dicta alias deleniti nemo dolor.</p>
+        <p>Animi dignissimos hic ex voluptate.</p>
+        <p>In aspernatur cupiditate blanditiis id.</p>
+        <p>Nam maxime ut rem sit.</p>
+        <p>Aperiam nostrum error ex veniam.</p>
+        <p>Deserunt expedita maiores laudantium neque.</p>
+        <p>Corrupti sequi at aspernatur magnam.</p>
+        <p>Optio voluptas facere expedita delectus?</p>
+        <p>Iure error tempora placeat totam.</p>
+        <p>Obcaecati unde maxime esse eligendi.</p>
+        <p>Sunt deserunt et blanditiis eaque.</p>
+        <p>Dolores praesentium blanditiis accusamus sed.</p>
+        <p>Dolore quo quos labore et.</p>
+        <p>Cum eaque totam sit quos.</p>
+        <p>Ex odit error iste laborum.</p>
+        <p>Maiores saepe id nulla autem!</p>
+        <p>Fugiat eveniet quis molestias id.</p>
+        <p>Atque cum eligendi amet corrupti.</p>
+        <p>Officiis ea esse facilis ullam.</p>
+        <p>Facilis cupiditate ipsa temporibus? Saepe!</p>
+        <p>Tempora soluta nam quo officiis?</p>
+        <p>Aspernatur numquam eum labore quae!</p>
+        <p>Adipisci consectetur maiores ipsum soluta?</p>
+        <p>Fugiat doloribus aliquid mollitia repellendus.</p>
+        <p>Facere saepe illum consectetur ratione?</p>
+        <p>Accusantium vitae reprehenderit explicabo iure.</p>
+        <p>Commodi maxime cupiditate quas aut.</p>
+        <p>Accusantium, optio nesciunt. Fuga, cumque.</p>
+        <p>Repudiandae officiis nemo expedita ducimus.</p>
+        <p>Dolorem quisquam quibusdam corrupti fuga!</p>
+        <p>Quisquam laborum harum sunt porro.</p>
+        <p>Aliquam in dolor pariatur vel!</p>
+        <p>Optio laboriosam dolorem nesciunt itaque.</p>
+        <p>Quasi deleniti voluptate delectus tempore?</p>
+        <p>Maxime ea quia modi iste?</p>
+        <p>Odio nihil molestiae reiciendis praesentium.</p>
+        <p>Repellendus suscipit rem aspernatur possimus?</p>
+        <p>Quis harum debitis voluptatibus nostrum!</p>
+        <p>Inventore quaerat porro distinctio iusto!</p>
+        <p>Recusandae temporibus provident eveniet quas.</p>
+        <p>Fugit beatae ullam ipsa. Doloremque?</p>
+        <p>Eligendi eveniet minima ipsum incidunt.</p>
+        <p>Id iure reprehenderit illum cum.</p>
+    </main>
+    <aside>Publicidad</aside>
+    <footer>2022 Examen</footer>
+</body>
+</html>

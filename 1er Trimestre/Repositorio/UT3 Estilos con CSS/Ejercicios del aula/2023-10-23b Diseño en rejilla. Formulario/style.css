@@ -1,0 +1,58 @@
+:root{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    --page-color: lightblue;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px red; */
+}
+
+
+
+body{
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: 0; */
+    display: grid;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: red;
+}
+
+main{
+    background-color: lightcoral;
+    flex-grow: 1;
+}
+footer{
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (min-width:450px){
+    
+    
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 0.5rem;
+    }
+    
+    .label{
+        text-align: right;
+    }
+    
+    .label-genero{
+        grid-column: 1/span 2;
+    }
+ 
+
+}

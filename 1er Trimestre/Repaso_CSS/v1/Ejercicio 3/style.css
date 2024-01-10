@@ -1,0 +1,39 @@
+:root{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --div-width: 120px;
+    --div-height: 120px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+div{
+    background-image: url(iconos_desarrollador_web.jpg);
+    height: var(--div-height);
+    width: var(--div-width);
+    position: relative;
+    border: solid 1px black;
+}
+
+.html{
+    background-position-y: calc(var(--div-height)*-1);
+    background-position-x: calc(var(--div-width)*-3);
+}
+.js{
+    background-position-y: calc(var(--div-height)*-1);
+    background-position-x: calc(var(--div-width)*-4);
+}
+.php{
+    background-position-y: calc(var(--div-height)*-2);
+    background-position-x: calc(var(--div-width)*-3);
+}
+
+.css{
+    background-position-x: calc(var(--div-width)*-2);
+}

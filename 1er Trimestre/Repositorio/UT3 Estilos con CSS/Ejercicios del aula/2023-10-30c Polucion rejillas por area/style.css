@@ -1,0 +1,95 @@
+:root{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./sources/the-earth.jpg);
+}
+
+header{
+    text-align: center;
+    color: white;
+    mix-blend-mode: multiply;
+    background-color: black;
+    text-transform: uppercase;
+    
+}
+main{
+    flex-grow: 1;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "uno dos dos tres"
+    "uno cuatro cinco cinco"
+    "seis siete ocho ocho"
+    "seis nueve ocho ocho"   
+    ;
+    gap: 8px;
+}
+
+div {
+    border: orange 3px solid;
+    border-radius: 25px;
+}
+
+.uno {
+    background-image: url(./sources/01.jpg);
+    grid-area: uno;
+}
+
+.dos{
+    background-image: url(./sources/02.jpg);
+    grid-area: dos;
+}
+
+.tres {
+    background-image: url(./sources/03.jpg);
+    grid-area: tres;
+}
+
+.cuatro {
+    background-image: url(./sources/04.jpg);
+    grid-area: cuatro;
+}
+
+.cinco {
+    background-image: url(./sources/05.jpg);
+    grid-area: cinco;
+}
+
+.seis {
+    background-image: url(./sources/06.jpg);
+    grid-area: seis;
+}
+
+.siete {
+    background-image: url(./sources/07.jpg);
+    grid-area: siete;
+}
+
+.ocho{
+    background-image: url(./sources/08.jpg);
+    grid-area: ocho;
+}
+
+.nueve {
+    background-image: url(./sources/09.jpg);
+    grid-area: nueve;
+}
+
+

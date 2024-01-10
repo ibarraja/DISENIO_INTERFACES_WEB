@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', _ =>{
+            setupButton();
+        })
+        function setupButton(){
+            const nButton = document.querySelector('.button');
+            nButton.addEventListener('click', startBallsFalling);
+        };
+
+        function startBallsFalling(){
+            const nBalls = Array.from(document.querySelectorAll('.ball'));
+
+            nBalls.forEach(nBall => {
+                nBall.style.animationPlayState = 'running';
+            });
+        }
+
+        function setupLastBall(){
+            const nBall = document.querySelector('.ball[style="--delay: 9"]');
+            nBall.addEventListener('animationend', startClock);
+        }
+        function startClock(){
+            const nClockhand = document.querySelector('.clockhand');
+            nClockhand.style.animationPlayState = 'running';
+        }
+    </script>
+</head>
+<body>
+    <div class="ball" style="--delay: 0"></div>
+    <div class="ball" style="--delay: 1"></div>
+    <div class="ball" style="--delay: 2"></div>
+    <div class="ball" style="--delay: 3"></div>
+    <div class="ball" style="--delay: 4"></div>
+    <div class="ball" style="--delay: 5"></div>
+    <div class="ball" style="--delay: 6"></div>
+    <div class="ball" style="--delay: 7"></div>
+    <div class="ball" style="--delay: 8"></div>
+    <div class="ball" style="--delay: 9"></div>
+
+    <div class="button"></div>
+
+    <div class="clockhand"></div>
+</body>
+</html>

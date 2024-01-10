@@ -1,0 +1,44 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: grey;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ads{
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    background-color: red;
+    border: solid 5px gold;
+    width: 200px;
+    padding: 1rem;
+    text-align: justify;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked + .ads {
+    display: none;
+}
+
+.ads header{
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ads .button-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        :root{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: black;
+        }
+        .Euro{
+            position: absolute;
+            background-color: rgb(148, 31, 31);
+            color: pink;
+            font-size: 35px;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+            animation: showingDown 6s linear 0s, scale 3s linear 0s infinite;
+            top: 30%;
+            
+        }
+        .Liver{
+            font-size: 20px;
+            position: absolute;
+            top: 70%;
+            color: lightgreen;
+            background-color: white;
+            width: 220px;
+            text-align: center;
+            animation: showingLeft 6s linear 6s, bgcChange 1s linear 12s infinite;
+            left: -40%;
+        }
+
+        @keyframes showingDown{
+            0%{
+                top:-20%;
+                transform: scale(1);
+            }20%{
+                transform: scale(1.5);  
+            }40%{
+                transform: scale(1);
+            }60%{
+                transform: scale(1.5);  
+            }80%{
+                transform: scale(1);
+            }100%{
+                transform: scale(1.5);  
+                top: 30%;
+            }
+        }
+
+        @keyframes scale{
+            0%{
+                transform: scale(1.5);
+            }50%{
+                transform: scale(1);
+            }100%{
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes showingLeft{
+            0%{
+                left: -30%;
+                background-color: white;
+            }
+            10%{
+                background-color: transparent;
+            }
+            20%{
+                background-color: white;
+            }
+            30%{
+                background-color: transparent;
+            }
+            40%{
+                background-color: white;
+            }
+            50%{
+                background-color: transparent;
+            }
+            60%{
+                background-color: white;
+            }
+            70%{
+                background-color: transparent;
+            }
+            80%{
+                background-color: white;
+            }
+            90%{
+                background-color: transparent;
+            }
+            100%{
+                left: 40%;
+                background-color: white;
+            }
+        }
+        @keyframes bgcChange{
+            0%{
+                left: 40%;
+                background-color: white;
+            }
+            50%{
+                left: 40%;
+                background-color: transparent;
+            }
+            100%{
+                left: 40%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Euro">Eurovisión 2023</div>
+    <div class="Liver">Te espero en Liverpool 😘</div>
+</body>
+</html>

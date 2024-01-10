@@ -1,0 +1,35 @@
+:root{ /*Generalmente aqui se pone el tamaño base de la fuente*/
+    font-size: 40px;
+}
+
+body{
+    background-color: grey;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    color: darkgreen;
+    border-style: solid;
+    border-color: gold;
+    border-width: 10px;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a:hover{
+    color:green;
+    text-decoration: underline;
+    background-color: #fff;
+}
+
+a:focus{
+    background-color: #fff;
+    color:orange;       
+    font-size: 3rem;
+    outline: none;
+}
+/* a:visited{
+    color:black;
+} */

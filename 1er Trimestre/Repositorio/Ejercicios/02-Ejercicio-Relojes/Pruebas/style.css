@@ -1,0 +1,79 @@
+:root{
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffff;
+    color: black;
+}
+
+.heading {
+    height: 15vh;
+    background: linear-gradient(to right, #006400, #02c057);
+    text-align: center; /* Alinea el texto en el centro horizontalmente */
+    /* padding: 20px; Espaciado interno del header */
+    color: white; /* Color del texto en el header */
+}
+
+.heading h1 {
+    font-size: 24px; /* Tamaño de fuente para el h1 */
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    text-transform: uppercase;
+
+}
+
+.menu-button {
+    background-color: transparent; /* Fondo transparente del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    padding: 10px; /* Espaciado interno del botón */
+}
+
+.line {
+    width: 30px; /* Longitud de las líneas */
+    height: 3px; /* Grosor de las líneas */
+    background-color: #000; /* Color de las líneas (negro en este caso) */
+    margin: 6px 0; /* Espaciado vertical entre las líneas */
+}
+
+.menu-button:hover .line {
+    background-color: #00f; /* Cambia el color de las líneas al pasar el ratón (azul en este caso) */
+}
+
+.menu {
+    display: flex; /* Usa un contenedor flex para alinear elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor flex */
+}
+
+.menu-button {
+    background-color: transparent; /* Fondo transparente del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    padding: 5px; /* Espaciado interno más pequeño para el botón */
+}
+
+.menu-button .line {
+    width: 20px; /* Longitud de las líneas más corta */
+    height: 2px; /* Grosor de las líneas más delgado */
+    background-color: #000; /* Color de las líneas (negro en este caso) */
+    margin: 4px 0; /* Espaciado vertical más pequeño entre las líneas */
+}
+
+.menu-button:hover .line {
+    background-color: #00f; /* Cambia el color de las líneas al pasar el ratón (azul en este caso) */
+}
+
+.titulo {
+    margin-left: 10px; /* Añade un pequeño margen entre el botón y el título */
+    font-size: 24px; /* Tamaño de fuente para el título */
+}

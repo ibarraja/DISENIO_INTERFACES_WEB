@@ -1,0 +1,38 @@
+:root{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    --page-color: lightblue;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: var(--page-color);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.box {
+    background-color: darkblue;
+    color: white;
+}
+
+.box-5 {
+    background-color: violet;
+    grid-column-start: 2;
+    grid-column-end: span 2; 
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.box:nth-child(8){
+    background-color: chartreuse;
+    grid-column: 1 / 3;
+}
+

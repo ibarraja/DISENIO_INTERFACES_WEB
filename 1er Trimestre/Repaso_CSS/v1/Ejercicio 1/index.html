@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            "aside"
+            "header"
+            "main"
+            "footer";
+        }
+        header{
+            grid-area: header;
+            background-color: green;
+        }
+        aside{
+            grid-area: aside;
+            background-color: red;
+        }
+        main{
+            grid-area: main;
+            background-color: lightgoldenrodyellow;
+        }
+        nav{
+            display: none;
+            background-color: blue;
+            height: 100%;
+        
+            & ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+        
+                & li{
+                    margin: 5px;
+                    background-color: yellow;
+                    text-align: center;
+                    flex-grow: 1;
+                }
+            }
+        }
+        footer{
+            grid-area: footer;
+            background-color: crimson;
+        }
+        
+        @media screen and (min-width:450px){
+            body{
+                display: grid;
+                grid-template-areas: 
+                "aside"
+                "header"
+                "nav"
+                "main"
+                "footer";
+            }
+            
+            nav{
+                display: block
+            };
+        }
+        
+        @media screen and (min-width: 800px) {
+            body{
+                display: grid;
+                grid-template-areas:
+                "header          header         header"
+                "nav             main           aside"
+                "footer          footer         footer"
+                ;
+        
+                grid-template-columns: 1fr 10fr 1fr;
+            }
+            
+            header{
+                grid-area: header;
+            }
+        
+        
+            nav{
+                grid-area: nav;
+                background-color: #0000ff;
+            }
+        
+            main{
+                grid-area: main;
+                overflow-y: scroll;
+            }
+        
+            aside{
+                grid-area: aside;
+                background-color: #ff0000;
+            }
+        
+            ul{
+                flex-direction: column;
+                height: 100%;
+            }
+        
+            li{
+                background-color: #ffff00;
+            }
+        
+            footer{
+                grid-area: footer;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        Empresa
+    </header>
+
+    <nav>
+        <ul>
+            <li>Lorem.</li>
+            <li>Sapiente.</li>
+            <li>Veritatis?</li>
+            <li>Qui.</li>
+            <li>Nemo.</li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Corporis assumenda voluptatum similique aliquid?</p>
+        <p>Dolor eius at optio accusamus!</p>
+        <p>Modi similique dicta esse error.</p>
+        <p>Qui placeat quis nobis modi!</p>
+        <p>Hic cumque id officia consectetur?</p>
+        <p>Ducimus aperiam reprehenderit a quod.</p>
+        <p>Ipsam ullam hic eos iure.</p>
+        <p>Veritatis sapiente voluptatum laboriosam expedita!</p>
+        <p>Nam, rem assumenda. Iusto, dicta.</p>
+        <p>Perspiciatis nostrum dolorem adipisci architecto!</p>
+        <p>Omnis magnam repudiandae mollitia sequi?</p>
+        <p>In recusandae veritatis minima pariatur?</p>
+        <p>Eveniet veniam blanditiis officia quam!</p>
+        <p>Quo laborum perspiciatis impedit odio!</p>
+        <p>Officia numquam dolor sint consequuntur!</p>
+        <p>Magnam laudantium repellat provident fuga!</p>
+        <p>Quas quod magnam vitae corporis.</p>
+        <p>Hic illum praesentium maxime eius.</p>
+        <p>Ab iste vitae labore asperiores?</p>
+        <p>Praesentium soluta quia id. Perspiciatis.</p>
+        <p>Sapiente voluptatum ipsa tenetur corrupti?</p>
+        <p>Eum consequuntur sint veniam officia!</p>
+        <p>Soluta veniam dolor id libero!</p>
+        <p>Laborum illo laudantium incidunt aut?</p>
+        <p>Corporis nostrum est modi adipisci.</p>
+        <p>Recusandae quidem incidunt explicabo nemo!</p>
+        <p>Aliquid corrupti mollitia ducimus maxime.</p>
+        <p>Fugit itaque illum quibusdam blanditiis?</p>
+        <p>Hic voluptates ipsam modi in?</p>
+        <p>Voluptatibus expedita laboriosam cumque nostrum.</p>
+        <p>Doloribus sed architecto et reiciendis?</p>
+        <p>Nostrum, exercitationem accusantium! Fugiat, in!</p>
+        <p>Aliquam a similique et omnis.</p>
+        <p>Recusandae ad rem non nihil!</p>
+        <p>Dolorum inventore quod harum tempore.</p>
+        <p>Cupiditate provident quod corrupti eligendi!</p>
+        <p>Repellat sapiente atque nulla pariatur.</p>
+        <p>Temporibus sint dicta neque. Praesentium.</p>
+        <p>Non harum magnam nesciunt fugit!</p>
+        <p>Fugit commodi mollitia labore suscipit!</p>
+        <p>Consectetur ipsam recusandae obcaecati dolore?</p>
+        <p>Suscipit nisi dolores alias laboriosam.</p>
+        <p>Vel, ducimus dignissimos? Quibusdam, incidunt!</p>
+        <p>Deserunt eveniet voluptatibus ipsum laboriosam?</p>
+        <p>Quidem eum blanditiis quia vel.</p>
+        <p>Nisi deserunt excepturi dolore dolorum?</p>
+        <p>Maiores assumenda doloribus repellendus. Repellendus.</p>
+        <p>Ea culpa corporis quis quam.</p>
+        <p>Perspiciatis, provident temporibus. Sequi, distinctio.</p>
+        <p>Nisi assumenda vitae nulla non.</p>
+        <p>Optio rem inventore cupiditate deleniti!</p>
+        <p>Veniam voluptate saepe eligendi minus!</p>
+        <p>Voluptate sunt hic consectetur adipisci?</p>
+        <p>Veniam excepturi fugit nobis deleniti.</p>
+        <p>Corporis optio praesentium blanditiis molestiae!</p>
+        <p>Ea blanditiis facere laudantium rem?</p>
+        <p>Ad dicta nam veritatis quis!</p>
+        <p>Natus ab atque sapiente eos!</p>
+        <p>Pariatur iste quos dolores culpa.</p>
+    </main>
+    <aside>Publicidad</aside>
+    <footer>2022 Examen</footer>
+</body>
+</html>

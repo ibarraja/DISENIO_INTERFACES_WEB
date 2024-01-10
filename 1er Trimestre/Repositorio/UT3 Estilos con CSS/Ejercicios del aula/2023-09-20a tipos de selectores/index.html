@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de selectores</title>
+    <style rel="stylesheet" type="text/css">
+        /* Selectores de etiqueta */
+        body{
+            background-color: burlywood;
+            color: rgb(0, 0, 255);
+        }
+        p{
+            font-family: arial;
+            font-size: 1.5rem; /*rem, en relación al tamaño por defecto, multiplica por el valor dado.*/
+        }
+
+        /*Selectores de identificador*/
+        #parrafo02{
+            background-color: #000;
+            color: yellow;
+            text-transform: uppercase;
+        }
+
+        /*Selector de clase*/
+        .primeros {
+            font-weight: bold;
+            text-decoration: line-through;
+            color: lightgreen
+        }
+        .ultimos{
+            font-size: 0.5rem;
+        }
+        .parrafo-importante{
+            font-weight: bold;
+            font-size: 2rem;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de selectores</h1>
+    <p id ="parrafo01" class="primeros">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, recusandae!</p>
+    <p id ="parrafo02" class="primeros">Tempore, quos beatae! Rem reprehenderit aliquid saepe nobis vel maiores!</p>
+    <p id ="parrafo03" class="primeros">Doloremque vitae, eum voluptatibus corrupti deserunt ea alias distinctio consequatur.</p>
+    <p id ="parrafo04" class="primeros">Dolore eos in inventore eligendi, qui dolor fugit rerum velit.</p>
+    <p id ="parrafo05" class="primeros">Adipisci perferendis officiis esse est explicabo porro, suscipit sunt atque.</p>
+    <p id ="parrafo06" class= "ultimos parrafo-importante">Perferendis sequi culpa voluptate quasi aut quidem cum quas tempore?</p>
+    <p id ="parrafo07" class= "ultimos">Ullam quam rem consequuntur iste repellat fugiat modi cumque! Quibusdam?</p>
+    <p id ="parrafo08" class= "ultimos">Dolorem hic blanditiis, eius sit quia officiis nobis suscipit amet!</p>
+    <p id ="parrafo09" class= "ultimos">Labore similique neque voluptate, perferendis officiis aut recusandae dicta facere.</p>
+    <p id ="parrafo10" class= "ultimos">Laudantium, molestias. Perferendis adipisci quod, nobis sed tempora error quo.</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+    'imgJuego imgJuego infoCloud Cloud'
+    'infoJuego info juego Sephiroth infoSefiroth'
+    'Tifa infoTifa PlayStation InfoBaret'
+    'Square Aerith infoAerith Barret';
+}
+

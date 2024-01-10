@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.recreo{
+    background-color: black;
+}
+
+table,td{
+    margin: auto;
+    border: solid;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.titulo{
+    background-color: blue;
+    color: white;
+    border-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.dwec{
+    background-color: gold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.desp{
+    background-color: lightblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.diw{
+    background-color: darkseagreen;
+    text-align: center;
+    text-transform: uppercase;
+}
+.libre{
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

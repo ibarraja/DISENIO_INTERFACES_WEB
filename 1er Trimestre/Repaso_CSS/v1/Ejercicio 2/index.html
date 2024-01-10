@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mensajes{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 250px;
+            background-color: black;
+            color: red;
+            font-weight: bold;
+            border: 5px solid red;
+        }
+        .mensajes::before{
+            content: "";
+            position: absolute;
+            border: 5px solid yellow;
+            width: 200px;
+            height: 60px;
+        }
+        
+        .mensajes::after{
+            content: "4";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+            background-color: red;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            top: 20px;
+            right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensajes">Mensajes</div>
+</body>
+</html>

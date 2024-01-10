@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.ball{
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    animation: ball-falling 1s linear;
+    animation-fill-mode: both;
+    animation-delay: calc(var(--delay)*1s/10);
+    animation-play-state: paused;
+}
+
+@keyframes ball-falling {
+    0%{
+        bottom: 90%
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+
+.button{
+    --width: calc(626px/3);
+    --height: calc(235px/3);
+    width: var(--width);
+    height: var(--height);
+    background-image: url(./buttons.avif);
+    background-repeat: no-repeat;
+    background-position-y: calc(var(--height)* -1);
+    background-position-x: calc(var(--width)* -2);
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+}
+
+.clockhand{
+    background-color: cyan;
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    animation: clockhandSpinning 2s linear 0s 1 normal both;
+    transform-origin: bottom;
+    animation-play-state: paused;
+}
+
+@keyframes clockhandSpinning {
+    from{
+        rotate: 0turn;
+    }
+    
+    to{
+        rotate: 1turn;
+    } 
+}

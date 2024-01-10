@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+
+        :root{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .Eurovision {
+            position: absolute;
+            margin-bottom: 5rem;
+            text-align: center;
+            font-size: 2rem;
+            color: yellow;
+            background-color: red;
+            padding: 1.2rem;
+            width: 200px;
+            animation: showingUpEurovision 3s linear 0s infinite;
+        }
+        .mensaje {
+            font-size: 1.5rem;
+            color: lightgreen;
+            animation: showingUpMensaje 3s linear 1s infinite;
+        }
+
+        @keyframes showingUpEurovision {
+            0%{
+                top: -50%;
+            }
+            10%{
+                top: 10%;
+                transform: scale(1);
+                
+            }
+            50% {
+                top: 10%;
+                transform: scale(2);
+            }
+            
+            90%{
+                top: 10%;
+                transform: scale(1);
+            }
+            100% {
+                top: -50%;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes showingUpMensaje {
+            0%{
+                background-color: white;
+            }
+            50%{
+                
+                background-color: transparent;
+            }
+            100%{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Eurovision">Eurovision 2023</div>
+    <div class="mensaje">Te esperamos en Liverpool 😘</div>
+</body>
+</html>
