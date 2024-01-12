@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="h-[100vh] grid grid-rows-[auto,auto,1fr,auto] 
+            md:grid-rows-[auto,auto,auto,1fr,auto]
+            lg:grid-rows-[auto_1fr_auto] lg:grid-cols-[auto,1fr,auto]">
+
+    <header class="bg-my-blue lg:col-span-3">
+        Encabezado
+    </header>
+
+    <nav class="bg-my-orange hidden md:block lg:row-start-2">
+        <ul class="flex p-2 gap-2 lg:flex-col lg:h-full">
+            <li class="menu-option lg:grid lg:place-content-center">Opcion 1</li>
+            <li class="menu-option lg:grid lg:place-content-center">Opcion 2</li>
+            <li class="menu-option lg:grid lg:place-content-center">Opcion 3</li>
+            <li class="menu-option lg:grid lg:place-content-center">Opcion 4</li>
+            <li class="menu-option lg:grid lg:place-content-center">Opcion 5</li>
+        </ul>
+    </nav>
+
+
+    <main class="bg-my-green lg:row-start-2">
+        Principal
+    </main>
+
+
+    <aside class="bg-my-yellow row-start-1 lg:row-start-2">
+        Publicidad
+    </aside>
+
+
+    <footer class="bg-my-gray lg:row-start-3 lg:col-span-3">
+        ©️Javier Ibarra 2024
+    </footer>
+
+</body>
+
+</html>

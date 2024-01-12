@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .menu-option {
+      @apply grow text-center bg-my-yellow basis-[0px];
+    }
+  }
